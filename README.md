@@ -1,5 +1,6 @@
 # @donavon/prevent-default
 A wrapper that calls `event.preventDefault()` for you.
+[![Build Status](https://travis-ci.org/donavon/prevent-default.svg?branch=master)](https://travis-ci.org/donavon/prevent-default)
 
 ## Install
 ```
