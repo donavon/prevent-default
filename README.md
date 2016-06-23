@@ -1,6 +1,7 @@
 # @donavon/prevent-default
-A wrapper that calls `event.preventDefault()` for you.
 [![Build Status](https://travis-ci.org/donavon/prevent-default.svg?branch=master)](https://travis-ci.org/donavon/prevent-default)
+
+A wrapper that calls event.preventDefault() for you.
 
 ## Install
 ```
@@ -8,13 +9,14 @@ A wrapper that calls `event.preventDefault()` for you.
 ```
 
 ## Usage
-To use `prevent-default`, simply `import` it (ES6) and wrap your `OnClick` with `pd()` as shown here:
+To use `prevent-default`, simply `import` it (ES6) and wrap your `onClick` with `pd()` as shown below.
+Although useful with React components, it is not React specific and can be used without React.  
 
 ```js
 import pd from "@donavon/prevent-default";
 
 const noClicking = () => {
-    alert("NoClicking Allowed!");
+    alert("You can't click here, buddy!");
 }
 
 const MyLinkComponent = ({ children }) => {
